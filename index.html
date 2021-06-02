@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />
+    <script src="./js/script.js" type="module" defer ></script>
+    <link rel="stylesheet" href="./css/style.css"> 
+    <title>Parcial</title>
+</head>
+<body>
+    <header>
+        <img src="./images/icono3.svg" alt="">
+        <nav>
+            <ul>
+                <li><a href="#">Nombre</a></li>
+                <li><a href="#">Anuncio</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <h1>Administracion</h1>
+    
+    <img id="img-contenedor" src="./images/auto.jpg" alt="Automovil">
+
+    <div class="clasesprincipal">
+        <main>
+            <form class="form-register">
+
+                <fieldset class="controls">
+                    <legend>informacion Del Anuncio</legend>
+                    <input type="hidden" name="id">
+
+                    <label for="isurname">TITULO</label><br>
+                    <input class="controls" id="isurname" type="text" name="titulo" placeholder="ingrese nombre" required><br><br>
+
+                    <input type="radio" name="transaccion" value="venta" checked> VENTA <br>
+                    <input type="radio" name="transaccion" value="alquiler"> ALQUILER <br>
+
+                    <label for="isurname">DESCRIPCION</label><br>
+                     <input class="controls" type="text" name="descripcion" placeholder="ingrese email" required><br><br>
+
+                     <label for="isurname">PRECIO</label><br>
+                     <input class="controls" type="text" name="precio" placeholder="ingrese email" required><br><br>
+                     
+
+
+                     <i class="fa fa-car" aria-hidden="true">
+                        <input type="text" name="puertas" placeholder="Puertas"> 
+                    </i>
+                    <i class="fa fa-car" aria-hidden="true">
+                        <input type="text" name="kms" placeholder="kms"> 
+                    </i>
+                    <i class="fa fa-car" aria-hidden="true">
+                        <input type="text" name="potencia" placeholder="potencia"> 
+                    </i>
+                    
+                </fieldset>
+                
+               <input class="botons" type="submit" id="btnSubmit"  value="Agregar" >
+
+                <input type="button" id="btnEliminar" class="oculto , botons" value="Eliminar" >
+        </form>
+        <div id="spinner-container"></div>
+        <div id="divLista"></div>
+        </main>
+    </div>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#">Nombre</a></li>
+                <li><a href="#">Anuncio</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contactos</a></li>
+            </ul>
+        </nav>
+        <p>Todos los derechos reservados &copy</p>
+    </footer>
+</body>
+</html>

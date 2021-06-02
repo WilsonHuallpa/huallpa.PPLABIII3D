@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+}
+
+header{
+    background-color: dodgerblue;
+    position: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+}
+h1 {
+    text-align: center;
+    color: rgb(0,0,0,0.3);
+}
+header img{
+     margin: 15px;
+}
+#img-contenedor{
+    width: 100%;
+    height: 30%;
+    background-size: contain;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+header nav{
+    display: flex;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    margin: auto;
+}
+ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 15px;
+    background-color:dodgerblue;
+    border: none;
+    border-radius: 5px;
+    margin: 5px 10px;
+    font-family: 'verdana';
+}
+form{
+    margin-top: 10px;
+    background: ghostwhite;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 4px;
+
+}
+form label{
+    font-size:18px;
+    font-family: 'vernada';
+}
+
+
+.controls{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    margin-bottom: 16px;
+    background:white;
+    border-radius: 5px;
+    font-size:18px;
+    font-family: 'verdana';
+}
+aside{
+    background-color: cadetblue;
+    display: none;
+    width: 30%;
+}
+.oculto{
+    display: none;
+}
+footer{
+    background-color:dodgerblue;    
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 5px;
+}
+footer p {
+    color: white;
+}
+.botons{
+    width: 30%;
+    background: #1ea007;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 18px;
+}
+.botons:hover{
+    cursor: pointer;
+}
+
+#divLista{
+    background: #e1e1e2;
+    border-radius: 4px;
+    font-family: 'callibri';
+    color:black;
+    box-shadow: 7px 13px 37px #000;
+    margin-top: 10px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+thead tr{
+    border: 1px solid black;
+    background-color: rgb(231, 128, 31);
+}
+
+table, th, td{
+    padding: 5px;
+    border :  1px solid black;
+    text-align:center;
+}
+.oculto{
+    display: none;
+}
