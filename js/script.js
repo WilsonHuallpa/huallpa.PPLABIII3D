@@ -33,11 +33,11 @@ function handlerSubmit(e){
     e.preventDefault();
     const frm =e.target;
     if(frm.id.value){
-        const modificarAuto = new Anuncio_Auto(Date.now(),frm.titulo.value, frm.transaccion.value,frm.descripcion.value,frm.precio.value, frm.puertas.value, frm.kms.value,frm.potencia.value);
+        const modificar = new Anuncio_Auto(parseInt(frm.id.value),frm.titulo.value, frm.transaccion.value,frm.descripcion.value,frm.precio.value, frm.puertas.value, frm.kms.value,frm.potencia.value);
         if(confirm("Comfirma Modificacion?")){
             agregarSpinner();
             setTimeout(()=>{
-                 modificarAuto(modificarAuto);
+                modificarAuto(modificar);
                  eliminarSpinner();
              }, 2000);
         }
@@ -46,7 +46,6 @@ function handlerSubmit(e){
     }else{
         
         const auto = new Anuncio_Auto(Date.now(),frm.titulo.value, frm.transaccion.value,frm.descripcion.value,frm.precio.value, frm.puertas.value, frm.kms.value,frm.potencia.value);
-        altaAuto(auto);
         agregarSpinner();
         setTimeout(()=>{
             altaAuto(auto);
@@ -188,6 +187,7 @@ function cargarFomulario(id){
     const {titulo,transaccion,descripcion,precio,puertas,kms,potencia} = automovil.filter(p => p.id === parseInt(id))[0];
     const frm = document.forms[0];
 
+    frm.id.value =  id;
     frm.titulo.value = titulo; 
     frm.transaccion.value = transaccion;
     frm.descripcion.value =descripcion;

@@ -3,7 +3,7 @@
 }
 
 header{
-    background-color: dodgerblue;
+    background-color: rgb(44, 109, 173);
     position: inherit;
     display: flex;
     flex-direction: row;
@@ -16,7 +16,8 @@ h1 {
     color: rgb(0,0,0,0.3);
 }
 header img{
-     margin: 15px;
+    width: 150px;
+    margin: 15px;
 }
 #img-contenedor{
     width: 100%;
@@ -26,6 +27,15 @@ header img{
     background-repeat: no-repeat;
     background-position: center;
     
+}
+.imagen{
+ 
+    width: 100%;
+    height: 500px;
+    background-image: url(../images/auto.jpg);
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
 }
 header nav{
     display: flex;
@@ -39,25 +49,29 @@ ul li a {
     text-decoration: none;
     color: white;
     padding: 5px 15px;
-    background-color:dodgerblue;
+    background-color:rgb(44, 109, 173);
     border: none;
     border-radius: 5px;
     margin: 5px 10px;
     font-family: 'verdana';
 }
 form{
+    width: 70%;
+    margin: 0 auto;
     margin-top: 10px;
     background: ghostwhite;
     border: none;
-    padding: 10px 30px;
+    padding: 10px 30px; 
     border-radius: 4px;
-
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 4px;
+    box-shadow: 7px 13px 37px #000;
 }
 form label{
     font-size:18px;
     font-family: 'vernada';
 }
-
 
 .controls{
     width: 100%;
@@ -78,7 +92,7 @@ aside{
     display: none;
 }
 footer{
-    background-color:dodgerblue;    
+    background-color:rgb(44, 109, 173); 
     display: flex;
     justify-content: space-between;
     padding: 15px 5px;
