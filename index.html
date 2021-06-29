@@ -79,8 +79,69 @@
 
                 <input type="button" id="btnEliminar" class="oculto , botons" value="Eliminar" >
         </form>
-        <div id="spinner-container"></div>
-        <div id="divLista"></div>
+        <div  class="spinner" id="spinner-container"></div>
+    </div>
+
+    <div class="container" style="margin-top: 20px;">
+        <form name="form2" style="background-color: rgb(209, 123, 52);" >
+          <h1>Filtros</h1>
+            <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="cboFiltrado">FILTRAR POR</label> 
+                  <div class="dropdown">
+                          <a class="btn btn-secondary dropdown-toggle" style="background-color:salmon;" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">todos</a>
+                              <ul class="dropdown-menu " aria-labelledby="dropdownMenuLink" >
+                              <li><input type="button" class="transparen" id="btnTodos" name="option" value="todos" ></li>
+                              <li><input type="button" class="transparen"  id="btnVenta" name="option" value="venta" ></li>
+                              <li><input type="button" class="transparen"  id="btnAlquiler" name= "option"value="alquiler" ></li>
+                          </ul>
+                  </div>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="isurname">Precio</label> <br>
+                  <input type="text" name="promedio" placeholder="4,2" required><br>
+                </div>
+            </div>
+        </form>
+      </div>
+      <div class="container"  id="check-id" style="background-color:lightcyan">
+        <div class="row justify-content-center"> 
+            <h1>Campos mostrados Tildar los campos a mostrar</h1>
+          </div>
+        <div class="row">
+            <div class="form-check form-check-inline col-md-3">
+              <input class="form-check-input" type="checkbox" id="v" name="titulo" value="titulo">
+              <label class="form-check-label" for="inlineCheckbox1">TITULO</label>
+            </div>
+            <div class="form-check form-check-inline col-md-3">
+              <input class="form-check-input" type="checkbox" id="v" name="transaccion" value="transaccion">
+              <label class="form-check-label" for="inlineCheckbox2">TRANSACCION</label>
+            </div>
+            <div class="form-check form-check-inline col-md-3">
+              <input class="form-check-input" type="checkbox" id="v" name="descripcion" value="descripcion">
+              <label class="form-check-label" for="inlineCheckbox3">DESCRIPCION</label>
+            </div>
+            <div class="form-check form-check-inline col-md-2">
+                <input class="form-check-input" type="checkbox" id="v" name="precio" value="precio">
+                <label class="form-check-label" for="inlineCheckbox1">PRECIO</label>
+              </div>
+        </div>
+        <div class="row">
+        <div class="form-check form-check-inline col-md-3">
+          <input class="form-check-input" type="checkbox" id="v" name="puerta" value="baños">
+          <label class="form-check-label" for="inlineCheckbox2">PUERTAS</label>
+        </div>
+        <div class="form-check form-check-inline col-md-3">
+          <input class="form-check-input" type="checkbox" id="v" name="kms" value="auto">
+          <label class="form-check-label" for="inlineCheckbox3">KMS</label>
+        </div>
+        <div class="form-check form-check-inline col-md-3">
+          <input class="form-check-input" type="checkbox" id="v7" name="potencia" value="dormitorio">
+          <label class="form-check-label" for="inlineCheckbox3">POTENCIA</label>
+        </div>
+        </div>
+
+      <div id="divLista"></div>
     </div>
     <div class="container-fluid">
         <footer >

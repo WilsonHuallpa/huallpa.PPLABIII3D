@@ -1,0 +1,57 @@
+{
+  "anuncio": [
+    {
+      "id": 1,
+      "titulo": "depar1",
+      "transaccion": "venta",
+      "descripcion": "zona sur",
+      "precio": "2500",
+      "puertas": "5",
+      "kms": "2",
+      "potencia": "8"
+    },
+    {
+      "id": 2,
+      "titulo": "depar2",
+      "transaccion": "venta",
+      "descripcion": "zona norte",
+      "precio": "250",
+      "puertas": "4",
+      "kms": "2",
+      "potencia": "8"
+    },
+    {
+      "id": 3,
+      "titulo": "depar3",
+      "transaccion": "alquiler",
+      "descripcion": "zona oeste",
+      "precio": "3500",
+      "puertas": "4",
+      "kms": "2",
+      "potencia": "8",
+      "activo": "true"
+    },
+    {
+      "id": 4,
+      "titulo": "depar4",
+      "transaccion": "venta",
+      "descripcion": "zona sur",
+      "precio": "2500",
+      "puertas": "4",
+      "kms": "2",
+      "potencia": "8",
+      "activo": "true"
+    },
+    {
+      "id": 5,
+      "titulo": "depar5",
+      "transaccion": "alquiler",
+      "descripcion": "zona norte",
+      "precio": "20000",
+      "puertas": "4",
+      "kms": "2",
+      "potencia": "8",
+      "activo": "true"
+    }
+  ]
+}

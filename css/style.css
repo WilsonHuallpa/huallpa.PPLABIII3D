@@ -139,3 +139,14 @@ table, th, td{
 .oculto{
     display: none;
 }
+.transparen{
+    border: none; 
+    background-color:transparent;
+    width: 100%;
+    text-align: left;
+}
+.spinner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
